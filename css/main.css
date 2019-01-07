@@ -1,0 +1,107 @@
+#container {
+    border: 1px #666;
+    width: 1280px;
+    margin: 0 auto;
+    background-color: #DDDDDD;
+    font-family: Microsoft JhengHei;
+}
+
+#headbox {
+    width: 1280px;
+    height: 60px;
+    border: 1px #666;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    background-color: #00AAAA;
+}
+
+.logo {
+    width: 20%;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.login {
+    float: right;
+    width: 10%;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.create {
+    float: right;
+    width: 10%;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+
+#sidebody {
+    width: 1000px;
+    border: 1px #666;
+    margin-top: 5px;
+    float: left;
+}
+
+.list {
+    list-style-type: none;
+    display: block;
+    width: 1130px;
+}
+
+.list li {
+    float: left;
+    height: 380px;
+    width: 30%;
+    text-align: center;
+    position: relative;
+}
+
+.item {
+    max-height: 350px;
+    height: 360px;
+    width: 280px;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: px;
+    background-color: #fff;
+    float: left;
+    display: block;
+}
+
+.bigImg {
+    max-width: 100%;
+    display: block;
+    width: 260px;
+    height: 132px;
+    margin: auto;
+    display: block;
+    vertical-align: middle;
+}
+
+.item h3 a {
+    font-family: Microsoft JhengHei;
+    font-size: 17pt;
+    color: #000;
+    transition: color 1s;
+    text-align: center;
+}
+
+.item h3 a:hover {
+    color: #008fd1;
+}
+
+.content {
+    font-family: Microsoft JhengHei;
+    font-size: 11pt;
+    color: #484848;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    height: 60px;
+    text-align: center;
+}
+
+.date {
+    font-family: Microsoft JhengHei;
+    font-size: 10pt;
+    color: #ccc;
+    margin-left: 200px;
+}
