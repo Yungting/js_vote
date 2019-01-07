@@ -44,7 +44,7 @@
         </div>
     <div class="text">
     <ul>
-        <li><img src=' <?php echo $row["v_photo"]; ?>'</li>
+        <li><img src='./upload/vote.jpg'></li>
         <li class="title"><?php echo $row["v_title"]; ?> </li>
         <li>發起人：<?php echo $row["v_user"]; ?></li>
         <li class="title"><?php echo $row["v_depiction"]; ?></li>

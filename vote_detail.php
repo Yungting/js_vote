@@ -48,11 +48,18 @@
     	</div>
     <div class="text">
     <ul>
-        <li><img src=' <?php echo $row["v_photo"]; ?>'</li>
-        <li class="title"><?php echo $row["v_title"]; ?> </li>
+        <!-- <li><img src=' <?php echo $row["v_photo"]; ?>'</li> -->
+        <div class="pic_left">
+            <li><img class="img_detail" src='./upload/vote.png'></li>
+        </div>
+        
+        <div class="title_right">
+            <li class="title_detail"><?php echo $row["v_title"]; ?> </li>
+            <li class="dep_detail"><?php echo $row["v_depiction"]; ?></li><br>
+        </div>
+
         <li>發起人：<?php echo $row["v_user"]; ?></li>
-        <li class="title"><?php echo $row["v_depiction"]; ?></li>
-        <li class="title">選項：</li>
+        <li>選項：</li>
         
         <ul>
             <?php
@@ -76,7 +83,7 @@
             date_default_timezone_set("Asia/Taipei");
             $date_line = strtotime($row["v_dateline_date"]." ".$row["v_dateline_time"]);
             $now = strtotime("now");
-            echo "<li>截止日期：".$row["v_dateline_date"]." ".$row["v_dateline_time"]."</li>";
+            echo "<li class='deadline'>截止日期：".$row["v_dateline_date"]." ".$row["v_dateline_time"]."</li><br>";
             if($date_line - $now <= 0){
                 
             }else{
@@ -89,21 +96,24 @@
                 if(in_array($u_id,$user)){
     
                 }else{
+                    echo '<div class="clear"></div><div class="vote_btn">';
                     echo '<form action="cast_vote.php" method="post" enctype="multipart/form-data">';
                     echo '<input type="hidden" name="id" value="'.$id.'">';
                     echo '<input type="submit" value="我要投票" class="button">';
-                    echo '</form>';
+                    echo '</form></div>';
                 }
             }
         ?>            
             <div class="comment_board">
-                <h2>留言區</h2>
-                <?php while($row2 = mysqli_fetch_assoc($all_comment)){ ?>
-                    <li>使用者姓名：<?php echo $row2["u_id"]; ?> </li>
-                    <li>評論：<?php echo $row2["com"]; ?> </li>
-                    <li>時間：<?php echo $row2["c_date"]; ?> </li>
-                <?php     }  ?>
+                <br><br>
                 
+                    <h2>留言區</h2>
+                    <?php while($row2 = mysqli_fetch_assoc($all_comment)){ ?>
+                        <li>使用者姓名：<?php echo $row2["u_id"]; ?> </li>
+                        <li>評論：<?php echo $row2["com"]; ?> </li>
+                        <li>時間：<?php echo $row2["c_date"]; ?> </li><br><br>
+                    <?php     }  ?>
+
                 <div class="leave_comment">
                     <form action="vote_detail.php?id=<?php echo $id;?>" method="post" enctype="multipart/form-data">
                         <input type="text" name="comment">

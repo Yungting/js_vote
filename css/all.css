@@ -71,19 +71,21 @@ h3 {
 
 li {
     list-style: none;
+    display: block;
+    margin-top: 10px;
 }
 
 .button {
     border: none;
     background-color: #555555;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 15px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: block;
+    float: right;
     font-size: 16px;
     border-radius: 12px;
-    margin: 25px;
 }
 
 .button2 {
@@ -108,7 +110,7 @@ input {
 .item {
     text-align: left;
     width: 230px;
-    height: 350px;
+    height: 390px;
     float: left;
     background-color: white;
     margin: 25px;
@@ -135,7 +137,7 @@ button {
     display: inline-block;
     font-size: 16px;
     border-radius: 12px;
-    margin: 25px;
+    margin: 35px;
 }
 
 .text {
@@ -149,15 +151,61 @@ img {
     height: 200px;
 }
 
+.vote_btn{
+    width: 100%;
+}
+
+.img_detail{
+    width: 200px;
+    height: 200px;
+}
+
+.pic_left{
+    float: left;
+    width: 30%;
+    height: 250px;
+}
+
+.title_right{
+    float: right;
+    width: 70%;
+    height: 250px;
+}
+
 .title {
-    font-size: 18px;
     text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+
+.deadline{
+    display: block;
+    margin-top: 20px;
+    float: right;
+}
+
+.title_detail{
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+}
+.dep_detail{
+    color: #555555;
+    font-size: 16px;
+    text-align: left;
+    display: block;
+    margin-top: 30px;
 }
 
 .dep {
     color: #555555;
     font-size: 12px;
     text-align: left;
+    display: block;
+    margin-top: 10px;
 }
 
 .left {}
@@ -178,4 +226,12 @@ img {
 
 .top {
     margin: 30px
+}
+
+.clear{
+    clear: both;
+}
+
+.comment_board{
+    margin-top: 50px;
 }

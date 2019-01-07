@@ -79,7 +79,10 @@ while($row = mysqli_fetch_assoc($all_vote)){
     //echo "<img src='".$row["v_photo"]."'>";
     //echo 'ID: '.$id;
     ?>
-    <div class="item"><img src=' <?php echo $row["v_photo"]; ?>'><br>
+    <div class="item"><img src='./upload/vote.png'><br>
+
+    <!-- <?php echo $row["v_photo"]; ?> -->
+
     <?php
     echo '<a class="title">'. $row["v_title"].'<a/><br>';
     //echo '<a class="user">'. $row["v_user"].'<a/><br>';
