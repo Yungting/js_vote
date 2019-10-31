@@ -84,11 +84,10 @@ while($row = mysqli_fetch_assoc($all_vote)){
     <!-- <?php echo $row["v_photo"]; ?> -->
 
     <?php
-    echo '<a class="title">'. $row["v_title"].'<a/><br>';
-    //echo '<a class="user">'. $row["v_user"].'<a/><br>';
-    echo '<a class="dep">'. $row["v_depiction"].'<a/><br>';
-    echo "<a href='vote_detail.php?id=".$id."'><button>查看詳情</button><a/></div>";
-    echo "<br>";
+    echo '<a class="title">'. $row["v_title"].'</a><br>';
+    //echo '<a class="user">'. $row["v_user"].'</a><br>';
+    echo '<a class="dep">'. $row["v_depiction"].'</a><br>';
+    echo "<a href='vote_detail.php?id=".$id."'><button class='button'>查看詳情</button></a></div>";
 }
 ?>
 <div style="clear:both">
